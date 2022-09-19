@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asal Çarpan</title>
+</head>
+<body>
+    <script>
+        var sayi=parseInt(prompt("Sayı: "));
+        var bolen = 2;
+
+        for(sayac = 1; sayi > 1 ; sayac++){
+            if(sayi % bolen == 0){
+                sayi = sayi/bolen;
+                document.write(bolen + " ");
+            }
+            else{
+                bolen++;
+            }
+        }
+    </script>
+</body>
+</html>

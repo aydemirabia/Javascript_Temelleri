@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2 Boyutlu Diziler</title>
+</head>
+
+<body>
+    <script>
+        ogrBilgi = [];
+        ad = prompt("Ad: ");
+        notBilgisi = parseInt(prompt("Not: "));
+        i = 0;
+        while (ad != null && Number.isInteger(notBilgisi)) {
+            ogrBilgi[i] = [ad, notBilgisi];
+            ad = prompt("Ad: ");
+            notBilgisi = parseInt(prompt("Not: "));
+            i++;
+        }
+        console.log(ogrBilgi);
+    </script>
+</body>
+
+</html>

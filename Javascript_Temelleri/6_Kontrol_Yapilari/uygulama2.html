@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>if-else || Sayıyı 0 Sayısına Bölme</title>
+</head>
+<body>
+    Sayı: <input type="text" id="sayi1"> <br><br>
+    Sayı: <input type="text" id="sayi2"> <br><br>
+    <input type="button" value="Hesapla" onclick="hesapla()">
+    <script>
+        function hesapla(){
+            var sayi1=document.getElementById("sayi1").value;
+            var sayi2=document.getElementById("sayi2").value;
+            sayi1=parseInt(sayi1);
+            sayi2=parseInt(sayi2);
+            var bolme = sayi1/sayi2;
+            if(sayi2==0){
+                alert("Herhangi bir reel sayının sıfıra bölümü tanımsızdır. Bölme işleminde sıfır ile bölüm tanımlı değildir. Ayrıca sonsuz da değildir. Bölümün sonucu pozitif sonsuz ya da negatif sonsuz olabilir.");
+            }
+            alert(bolme);
+        }
+    </script>
+</body>
+</html>

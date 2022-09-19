@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Map ve Filter Fonksiyonu</title>
+</head>
+
+<body>
+    <script>
+        //Map Function
+
+        dizi=[3,7,9,15,26,18,45];
+        yeniDizi=[];
+        yeniDizi=dizi.map(function(eleman){
+            return eleman*3;
+        });
+        console.log(yeniDizi);
+
+        var kirtasiye = ["Kitap","Kalem","Silgi","Defter","Yapışkan","Bant"];
+        var yeniKirtasiye=[];
+        yeniKirtasiye=kirtasiye.map(function(eleman){
+            if(eleman=="Yapışkan"){
+                return eleman.toLowerCase();
+            }
+            else{
+                return eleman.toUpperCase();
+            }
+        });
+
+        console.log(yeniKirtasiye);
+
+        //Filter Function
+
+        dizi_f = [3,7,6,9,15,23,18,45];
+        yenidizi_f = dizi_f.filter(function(eleman,index){
+            if(eleman<20)
+            return eleman;
+        });
+        console.log(dizi_f);
+        console.log(yenidizi_f);
+    </script>
+</body>
+
+</html>

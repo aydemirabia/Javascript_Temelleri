@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kullanıcıdan Bilgi Alma</title>
+    <script>
+        function hesapla(){
+            var a=document.getElementById("sayi1").value;
+            var b=document.getElementById("sayi2").value;
+            a=parseInt(a);
+            b=parseFloat(b);
+            islem = a + b;
+            alert(islem);
+        }
+    </script>
+</head>
+<body>
+    Sayı : <input type="text" id="sayi1"><br>
+    <br>
+    Sayı : <input type="text" id="sayi2"><br>
+    <br>
+    <input type="button" id="btn" value="Hesapla" onclick="hesapla()">
+</body>
+</html>

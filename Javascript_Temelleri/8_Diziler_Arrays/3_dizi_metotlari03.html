@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Dizi Örnekler - 2</title>
+</head>
+
+<body>
+    <script>
+        var kirtasiye = ["Kitap", "Bant", "Ajanda", "Sekreterlik", "Zımba", "Defter", "USB", "Silgi"];
+        console.log(kirtasiye);
+        //Metinsel Sıralama
+        //dizi içinde baştan sona (a-z) sıralama
+        kirtasiye.sort();
+        console.log(kirtasiye);
+
+        //reverse(): diziyi terse çevirme metotu
+        kirtasiye.sort();
+        kirtasiye.reverse();
+        console.log(kirtasiye);
+
+        //Matematiksel Sıralama
+        var eleman = [5, 20, 26, 35, 6, 9, 8];
+        eleman.sort(); //buradaki sıralama en soldaki basamağı hedefe alır. her ne kadar 20 sayısı 3 sayısından büyük olsa da 20'deki onlar basamağındaki 2, 3ten küçük olduğu için 20<3 şeklinde sıralama gerçekleşecektir.
+        console.log(eleman);
+        //matematiksel olarak küçükten büyüğe doğru sıralama
+        eleman.sort(function(a,b){return a-b;});
+        console.log(eleman);
+
+        var iller = new Array('', 'Adana', 'Adıyaman', 'Afyon', 'Ağrı', 'Amasya', 'Ankara', 'Antalya', 'Artvin',
+            'Aydın', 'Balıkesir', 'Bilecik', 'Bingöl', 'Bitlis', 'Bolu', 'Burdur', 'Bursa', 'Çanakkale',
+            'Çankırı', 'Çorum', 'Denizli', 'Diyarbakır', 'Edirne', 'Elazığ', 'Erzincan', 'Erzurum', 'Eskişehir',
+            'Gaziantep', 'Giresun', 'Gümüşhane', 'Hakkari', 'Hatay', 'Isparta', 'Mersin', 'İstanbul', 'İzmir',
+            'Kars', 'Kastamonu', 'Kayseri', 'Kırklareli', 'Kırşehir', 'Kocaeli', 'Konya', 'Kütahya', 'Malatya',
+            'Manisa', 'Kahramanmaraş', 'Mardin', 'Muğla', 'Muş', 'Nevşehir', 'Niğde', 'Ordu', 'Rize', 'Sakarya',
+            'Samsun', 'Siirt', 'Sinop', 'Sivas', 'Tekirdağ', 'Tokat', 'Trabzon', 'Tunceli', 'Şanlıurfa', 'Uşak',
+            'Van', 'Yozgat', 'Zonguldak', 'Aksaray', 'Bayburt', 'Karaman', 'Kırıkkale', 'Batman', 'Şırnak',
+            'Bartın', 'Ardahan', 'Iğdır', 'Yalova', 'Karabük', 'Kilis', 'Osmaniye', 'Düzce');
+
+        //içerik arama metodu
+        console.log(iller.indexOf("İstanbul"));
+    </script>
+</body>
+
+</html>

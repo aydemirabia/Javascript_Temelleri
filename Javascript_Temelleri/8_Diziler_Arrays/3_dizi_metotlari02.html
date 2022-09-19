@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Diziler Örnekler</title>
+</head>
+<body>
+    <script>
+        //Amaç kullanıcıdan öğrenci bilgilerini almak ve bu bilgileri bir dizide saklamak
+        var notlar=[], i=0,notBilgisi=0,ortalama = 0;
+        while(parseInt(notBilgisi) == notBilgisi){
+            notBilgisi=parseInt(prompt("Bir not giriniz / Çıkmak için herhangi bir tuşa basınız: "));
+            if(parseInt(notBilgisi)==notBilgisi){
+                notlar[i]=notBilgisi;
+            }
+            console.log(notlar);
+            i++;
+        }
+        var topla=0;
+        for(i=0;i<notlar.length;i++){
+            topla+=notlar[i];
+            document.write(notlar[i]+"<br>");
+        }
+        ortalama=topla/notlar.length;
+        document.write("Ortalamanız: "+ortalama);
+    </script>
+</body>
+</html>

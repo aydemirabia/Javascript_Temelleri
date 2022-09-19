@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>if-else || Alan Denetleme</title>
+</head>
+
+<body>
+    Adınız: <input type="text" id="ad"> <br><br>
+    Soyadınız: <input type="text" id="soyad"> <br><br>
+    Şifreniz: <input type="text" id="sifre"> <br><br>
+    <input type="button" value="Kontrol Ediniz" onclick="kontrol()">
+
+    <script>
+        function kontrol() {
+            var ad = document.getElementById("ad").value;
+            var soyad = document.getElementById("soyad").value;
+            var sifre = document.getElementById("sifre").value;
+
+            if (ad == "") {
+                alert("Ad alanı boş geçilemez!");
+            }
+            else if (soyad == "") {
+                alert("Soyad alanı boş geçilemez!");
+            }
+            else if (sifre == "") {
+                alert("Şifre alanı boş geçilemez!");
+            }
+        }
+    </script>
+
+
+</body>
+
+</html>

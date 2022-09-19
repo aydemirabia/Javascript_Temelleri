@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for döngüsü</title>
+</head>
+
+<body>
+    <input type="checkbox" name="hobi"> KİTAP <br>
+    <input type="checkbox" name="hobi"> MÜZİK <br>
+    <input type="checkbox" name="hobi"> YÜZME <br>
+    <input type="checkbox" name="hobi"> TV <br>
+    <input type="checkbox" name="hobi"> SİNEMA <br>
+    <input type="checkbox" name="hobi"> ALIŞVERİŞ <br>
+    <input type="checkbox" name="hobi"> DAĞCILIK <br>
+    <input type="checkbox" name="hobi"> FOTOĞRAF <br>
+    <input type="checkbox" name="hobi"> RESİM <br>
+    <input type="checkbox" name="hobi"> GEZİ <br>
+    <input type="checkbox" name="hobi"> SPOR <br> <br>
+    <input type="button" onclick="tumunuSec()" value="Tümünü Seç">
+
+
+    <script>
+        function tumunuSec() {
+            toplamHobi = document.getElementsByName("hobi").length;
+            for(i=0;i<toplamHobi;i++){
+                document.getElementsByName("hobi")[i].checked = true;
+            }
+        }
+    </script>
+</body>
+
+</html>
